@@ -1,4 +1,17 @@
-<p>
-  this is the first stage
-</p>
-<p>{{player.name}}, {{player.score}}</p>
+<div class="player-info">
+  <p>{{player.name}}: {{player.score}}</p>
+</div>
+
+<p>You know the drill. Bowser has stolen something really important to you and you have to get to the end of this game to save it.</p>
+<p>Avoid all the bad stuff by shooting, jumping on some of, or trying to avoid them.</p>
+<p>As always, you get a boost to start out. Try not to lose it.</p>
+<p class="option">Do you want to consume a fireball or an iceball?</p>
+
+<!-- if routerLink = "second" the page would try to direct you to first/second. like in file paths, the / moves one directory up or back  -->
+<a routerLink="/second">
+  <button (click)="consumeFireball()">Fireball</button>
+</a>
+
+<a routerLink="/second">
+  <button (click)="consumeIceball()">Iceball</button>
+</a>

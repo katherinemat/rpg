@@ -1,2 +1,20 @@
 <img src="../resources/images/mario.png" alt="mario">
-<a routerLink="first"><button>Let's go!</button></a>
+
+<div class="form form-inline">
+    <div class="form-group">
+      <label>Name</label>
+      <input required class="form-control" #playerName>
+    </div>
+
+    <label>Character</label>
+    <select class="form-group" #playerCharacter>
+      <option value="Mario" selected="selected">Mario</option>
+      <option value="Luigi">Luigi</option>
+      <option value="Peach">Peach</option>
+      <option value="Yoshi">Yoshi</option>
+    </select>
+
+    <a routerLink="first">
+      <button (click)="createNewPlayer(playerName.value, playerCharacter.value)">Let's go!</button>
+    </a>
+  </div>

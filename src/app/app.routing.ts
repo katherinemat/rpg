@@ -2,6 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +12,10 @@ const appRoutes: Routes = [
   {
     path: 'first',
     component: FirstComponent
+  },
+  {
+    path: 'second',
+    component: SecondComponent
   }
 ];
 
